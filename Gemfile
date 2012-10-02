@@ -42,3 +42,4 @@ gem "haml-rails", ">= 0.3.5", :group => :development
 gem "hpricot", ">= 0.8.6", :group => :development
 gem "ruby_parser", ">= 2.3.1", :group => :development
 gem "bootstrap-sass", ">= 2.1.0.0"
+gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
