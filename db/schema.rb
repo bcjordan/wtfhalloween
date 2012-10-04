@@ -11,6 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20121004041343) do
+
+  create_table "costumes", :force => true do |t|
+    t.string "quip"
+    t.string "short_name"
+    t.string "amazon_id"
+    t.string "amazon_link"
+    t.string "imgur"
+    t.string "girl"
+    t.string "slutty"
+    t.string "scary"
+    t.string "buy"
+    t.string "kid"
+    t.string "prime"
+  end
 
 end
