@@ -9,35 +9,4 @@
         = csrf_meta_tags
         = yield(:head)
   %body
-    #suggest
-      YOU LOOK GORGEOUS
-
-    #container
-      %h1
-        %p
-          = randomize |
-            "what if you fucking were", |
-            "why wouldnt you be"
-          %p
-            %a{href:"http://google.com", target:"_new"}
-              = @costume
-              = randomize |
-                "a pirate", |
-                "the green man", |
-                "batman", |
-                "ironman", |
-                "finn", |
-                "a taco", |
-                "an orange juice box"
-        #choices
-          %p
-            %a{href:"http://google.com", target:"_new"}
-              = randomize |
-                "my friends would be offended", |
-                "nawww", |
-                "that would ruin my night", |
-                "that's too slutty", |
-                "i'm a dude"
-          %p
-            %a{href:"http://google.com", target:"_new"}
-              $15? THAT'S TOO FUCKING EXPENSIVE
+    = yield

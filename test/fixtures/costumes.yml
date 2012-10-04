@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quip: MyString
+  short_name: MyString
+  amazon_id: MyString
+  amazon_link: MyString
+  imgur: MyString
+  girl: MyString
+  slutty: MyString
+  scary: MyString
+  buy: MyString
+  kid: MyString
+  prime: MyString
+
+two:
+  quip: MyString
+  short_name: MyString
+  amazon_id: MyString
+  amazon_link: MyString
+  imgur: MyString
+  girl: MyString
+  slutty: MyString
+  scary: MyString
+  buy: MyString
+  kid: MyString
+  prime: MyString
