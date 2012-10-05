@@ -1,27 +1,38 @@
 #suggest
-  YOU LOOK GORGEOUS
-  = @costume.imgur
+  = "#{@costume.quip}"
 
 %div{style: "width:100%; height:100%; background-repeat:repeat-x; background-image: url('#{@costume.imgur}')"}
   %div{style: "width:100%; height:100%; background-image: url('#{image_path "screen.gif" }')"}
     #container
       %h1
         %p
-          = randomize |
-            "what if you fucking were", |
-            "why wouldnt you be"
+          - if (rand(40) == 1) && @costume.quip
+            = "#{@costume.quip}"
+          - else
+            = randomize |
+              "what if you fucking were", |
+              "stop refreshing and be", |
+              "why wouldnt you be", |
+              "imagine walking in as", |
+              "what would your mother think if you were", |
+              "once my grandma was", |
+              "my friend met her boyfriend as", |
+              "imagine everyone starting at you as", |
+              "what if your father saw you as", |
+              "you could be, shit you not,", |
+              "you would never pass for"
           %p
-            %a{href:@costume.amazon_link.fix_url, target:"_new"}
-              = @costume.short_name
+            %a{href:"#{@costume.amazon_link.fix_url}", target:"_new", title: "#{@costume.quip}"}
+              = "#{@costume.short_name}"
         #choices
           %p
-            %a{href:"http://google.com", target:"_new"}
+            %a{href:"/"}
               = randomize |
+                "i don't want to be that", |
                 "my friends would be offended", |
                 "nawww", |
                 "that would ruin my night", |
-                "that's too slutty", |
-                "i'm a dude"
+                "fuck no"
           %p
-            %a{href:"http://google.com", target:"_new"}
-              $15? THAT'S TOO FUCKING EXPENSIVE
+            %a{href:"/?#{@choice[:param]}"}
+              = "#{@choice[:phrase]}"

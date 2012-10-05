@@ -2,8 +2,10 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "WHAT THE FUCK SHOULD I BE FOR HALLOWEEN"
-      %meta{:content => content_for?(:description) ? yield(:description) : "Wtfhalloween", :name => "description"}
+      %title= content_for?(:title) ? yield(:title) : "WHAT THE FUCK SHOULD I WEAR FOR HALLOWEEN"
+      %link{rel:"shortcut icon", href:"#{image_path "favicon.ico"}", type:"image/x-icon"}
+      %link{rel:"icon", href:"#{image_path "favicon.ico"}", type:"image/x-icon"}
+      %meta{:content => content_for?(:description) ? yield(:description) : "what to wear for halloween. I mean, fuck.", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
