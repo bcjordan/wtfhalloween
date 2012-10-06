@@ -38,16 +38,14 @@ class HomeController < ApplicationController
 
   ## TODO: Fix this logic to handle falses
   def match(costume, visitor)
-    is_match = true
-
     for key, visitor_choice in visitor
       if costume.has_attribute? (key)
-        attribute = (costume.read_attribute key)
+        costume_choice = (costume.read_attribute key)
       end
 
-      if (visitor_choice == "duh") and (attribute.nil? or attribute == "" or attribute == "FALSE")
+      if (visitor_choice == "duh") and (costume_choice.nil? or costume_choice == "" or costume_choice == "FALSE")
         return false
-      elsif (visitor_choice == "nuh") and not (attribute and attribute != "FALSE")
+      elsif (visitor_choice == "nuh") and !(costume_choice.nil? or costume_choice == "" or costume_choice == "FALSE")
         return false
       end
     end
