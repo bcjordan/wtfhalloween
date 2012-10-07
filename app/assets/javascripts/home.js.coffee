@@ -5,4 +5,3 @@
 $(window).load(
   -> $("#option").fadeIn(2500, -> $("#choices1").fadeIn(500, -> $(".photohidden").addClass("photo"); $(".photo").removeClass("photohidden"); $("#choices2").fadeIn(500)))
 )
-
