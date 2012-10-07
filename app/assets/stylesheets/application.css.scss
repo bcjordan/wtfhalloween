@@ -14,8 +14,8 @@ p {
   text-transform: uppercase
 }
 
-.photo {
-
+.photohidden {
+  background-size: 0px 0px;
 }
 
 #option {
@@ -24,6 +24,10 @@ p {
 
 #choices1, #choices2 {
   display: none;
+}
+
+#container {
+  display: block;
 }
 
 #choices p {
