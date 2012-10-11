@@ -61,9 +61,9 @@ class HomeController < ApplicationController
     elsif costume.is_guy and !visitor["girl"]
       return { phrase: "I'm not a fucking dude", param: "girl=duh" }
     elsif costume.is_slutty and !visitor["slutty"]
-      return { phrase: "I'm not a fucking slut", param: "slutty=nuh" }
+      return { phrase: "I'm no slut", param: "slutty=nuh" }
     elsif costume.isnt_slutty and !visitor["slutty"]
-      return { phrase: randomize("What is this cutesy shit? I want to get laid", "not slutty enough", "nowhere near slutty enough"), param: "slutty=duh" }
+      return { phrase: randomize("What is this cutesy shit?", "not slutty enough", "nowhere near slutty enough"), param: "slutty=duh" }
     else
       return { phrase: randomize("Forget everything I told you", "You don't know me, reset", "forget what I said"), param: "reset=duh" }
     end

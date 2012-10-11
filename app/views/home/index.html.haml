@@ -16,17 +16,17 @@
             = "#{@costume.quip}"
           - else
             = randomize |
-              "what if you fucking were", |
-              "why not stop refreshing and fucking be", |
+              "what if you were", |
+              "why not stop refreshing and  be", |
               "why wouldn't you fucking be", |
               "why not walk in to the party as", |
-              "what would your mother think if you were fucking", |
-              "once my fucking grandma was", |
-              "my sister met her fucking boyfriend as", |
-              "imagine everyone fucking staring at", |
+              "what would your mother think if you were", |
+              "once my grandma was", |
+              "my sister met her boyfriend as", |
+              "imagine everyone staring at", |
               "what if your father saw you as", |
               "be life of the fucking party as", |
-              "think you could fucking pass for"
+              "you could probably pass for"
           #option
             %p
               %a{href:"#{@costume.amazon_link.fix_url}", target:"_new", title: "#{@costume.quip}"}
@@ -36,7 +36,6 @@
             %a{href:"/"}
               = randomize |
                 "i wouldn't fucking like that", |
-                "my friends wouldn't fucking like that", |
                 "no fucking thanks", |
                 "that would ruin my fucking night", |
                 "fuck no"
