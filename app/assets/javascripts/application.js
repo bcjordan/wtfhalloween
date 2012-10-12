@@ -45,5 +45,3 @@
     a.__SV = 1.1
 })(document, window.mixpanel || []);
 mixpanel.init("5cf11aae199da8abd486b0bcc6b73c1c");
-
-mixpanel.track("Site load");
