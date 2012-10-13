@@ -10,7 +10,7 @@ end
 
 class String
   def fix_url
-    self.include?('http') ? self : "http://#{self}"
+    (self.include?('http') ? self : "http://#{self}") + "?tag=savingtogetagiantspongebobcostume-20"
   end
 end
 
